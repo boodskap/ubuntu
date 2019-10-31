@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 MAINTAINER Boodskap <platform@boodskap.io>
 
-RUN apt-get -y update && apt-get install -y nginx sudo nodejs npm git software-properties-common 
+RUN apt-get -y update && apt-get install -y nginx sudo nodejs npm git software-properties-common netcat
 RUN npm install pm2 -g
 RUN add-apt-repository -y ppa:openjdk-r/ppa
 RUN apt-get update -y
